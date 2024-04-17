@@ -8,3 +8,22 @@ Template: astra
 Version: 1.0.0
 Text Domain: astrachild
 */
+
+.ast-search-menu-icon.slide-search .search-form {
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s;
+  position: absolute;
+  z-index: 3;
+  right: auto; /* override - to make search bar pop out to the right */
+  left: 1.7em; /* new - to make search bar pop out to the right */
+  width: 220px; /* new - to make search bar pop out to the right */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ast-search-menu-icon.ast-dropdown-active .search-field {
+  width: 220px; /* new - to make search bar pop out to the right */
+}
